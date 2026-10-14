@@ -46,21 +46,42 @@
 
 ## 🖼️ Screenshots
 
-> *Application running with device connected*
+<div align="center">
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│  ⚡ ADB Platform Tools  v1.0.0          ▶ Start  ⏹ Kill   │
-│  📱 Device Connected [DEVICE]  Serial: ABC123DEF    ● 🟢   │
-├─────────────────────────────────────────────────────────────┤
-│  📱 Device │ 📂 Files │ 📦 Apps │ 📋 Logcat │ ⚡ Fastboot │
-├─────────────────────────────────────────────────────────────┤
-│                     [Tab Content]                           │
-├─────────────────────────────────────────────────────────────┤
-│  ⚡ Output Console                              🗑 Clear   │
-│  [14:30:01] ✅ Platform Tools loaded from: ./platform-tools │
-└─────────────────────────────────────────────────────────────┘
-```
+### 📱 1. Device Info & Controls
+![Device Info](docs/screenshots/01_device.png)
+
+<br/>
+
+### 📂 2. File Manager (Push, Pull & Storage Browser)
+![File Manager](docs/screenshots/02_files.png)
+
+<br/>
+
+### 📦 3. App & Package Manager
+![App Manager](docs/screenshots/03_apps.png)
+
+<br/>
+
+### 📋 4. Live Color-Coded Logcat
+![Logcat](docs/screenshots/04_logcat.png)
+
+<br/>
+
+### ⚡ 5. Fastboot & Bootloader Operations
+![Fastboot](docs/screenshots/05_fastboot.png)
+
+<br/>
+
+### 📦 6. ADB Sideload (OTA / Recovery)
+![Sideload](docs/screenshots/06_sideload.png)
+
+<br/>
+
+### 🖥️ 7. Interactive Terminal & ADB Shell
+![Terminal](docs/screenshots/07_terminal.png)
+
+</div>
 
 ---
 
@@ -68,10 +89,12 @@
 
 ```
 Platform Tools/
-├── main.py              ← Main application source
+├── main.py              ← Main application source (PyQt6)
 ├── requirements.txt     ← Python dependencies
 ├── build.py             ← Build script (compiles to .exe)
-├── README.md            ← This file
+├── README.md            ← Project documentation
+├── docs/
+│   └── screenshots/     ← Application preview screenshots
 └── platform-tools/      ← Google Android Platform Tools
     ├── adb.exe
     ├── fastboot.exe
@@ -90,8 +113,8 @@ Platform Tools/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/adb-platform-tools-gui.git
-cd adb-platform-tools-gui
+git clone https://github.com/Firatzzz/platform_tools.git
+cd platform_tools
 
 # 2. Install dependencies
 pip install -r requirements.txt
